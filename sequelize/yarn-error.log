@@ -1,0 +1,41 @@
+Arguments: 
+  /usr/local/Cellar/node/10.9.0/bin/node /usr/local/Cellar/yarn/1.9.4/libexec/bin/yarn.js add sequelize mysql2
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/alex/.rvm/bin:/Users/alex/go/bin:/Users/alex/.rvm/bin:/Users/alex/go/bin
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  10.9.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/sequelize: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/Cellar/yarn/1.9.4/libexec/lib/cli.js:138128:19)
+      at ontimeout (timers.js:424:11)
+      at tryOnTimeout (timers.js:288:5)
+      at listOnTimeout (timers.js:251:5)
+      at Timer.processTimers (timers.js:211:10)
+
+npm manifest: 
+  {
+    "name": "sequelize",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+  
+    },
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
