@@ -1,3 +1,7 @@
+/**
+ * 验证是否能连通
+ */
+
 const db = require('../../db');
 
 db.authenticate()
