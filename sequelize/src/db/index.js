@@ -20,6 +20,20 @@ const sequelize = new Sequelize(dbConfig.database, dbConfig.username, dbConfig.p
         idle: 10000
     },
 
+    // define: {
+    // 全局设置引擎, 默认是 InnoDB
+    //     engine: 'MYISAM', 
+    // 全局设置 类 级别的函数
+    //     classMethods: {
+    //         method1: function () {},
+    //         method2: function () {}
+    //     },
+    // 全局设置 实例 级别的函数
+    //     instanceMethods: {
+    //         method3: function () {}
+    //     }
+    // }
+
     // SQLite only
     // storage: 'path/to/database.sqlite'
 });

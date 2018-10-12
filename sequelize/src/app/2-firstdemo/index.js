@@ -56,7 +56,4 @@ const queryAll = async () => {
     await createUser();
     console.log('------------- queryAll');
     await queryAll();
-
-    const user = User.findOne();
-    console.log(user.id);
 })();
