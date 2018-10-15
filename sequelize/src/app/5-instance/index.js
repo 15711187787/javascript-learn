@@ -1,3 +1,6 @@
+/**
+ * 实例 (批量)创建，更新，删除
+ */
 const sequelize = require('sequelize');
 const db = require('../../db');
 
@@ -66,6 +69,8 @@ const bulkCreateUsage = async () => {
         });
     }
 
+    // 指定了 fields 后，前面设置的 level 值就无效了
+    // 此时, level 取的是默认值 1
     const result = await Role.bulkCreate(l, {
         fields: ['role_id', 'role_name']
     });
@@ -159,18 +164,18 @@ const incrementUsage = async () => {
 
 
 (async () => {
-    // console.log('------------- createTable');
-    // await createTable();
-    // console.log('------------- nonPersistent');
-    // await nonPersistent();
-    // console.log('------------- persistent');
-    // await persistent();
-    // console.log('------------- bulkCreateUsage');
-    // await bulkCreateUsage();
-    // console.log('------------- updateUsage');
-    // await updateUsage();
-    // console.log('------------- deleteUsage');
-    // await deleteUsage();
+    console.log('------------- createTable');
+    await createTable();
+    console.log('------------- nonPersistent');
+    await nonPersistent();
+    console.log('------------- persistent');
+    await persistent();
+    console.log('------------- bulkCreateUsage');
+    await bulkCreateUsage();
+    console.log('------------- updateUsage');
+    await updateUsage();
+    console.log('------------- deleteUsage');
+    await deleteUsage();
     console.log('------------- incrementUsage');
     await incrementUsage();
 })();
