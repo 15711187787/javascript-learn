@@ -43,6 +43,11 @@ const Account = db.define(
             // 账号需要唯一性，登录时候使用
             unique: true,
         },
+        // 密码
+        password: {
+            type: STRING(128),
+            allowNull: false,
+        },
         // 昵称
         nickName: {
             type: STRING(32),
