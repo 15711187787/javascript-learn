@@ -12,7 +12,8 @@ const sequelize = new Sequelize(dbConfig.database, dbConfig.username, dbConfig.p
     host: dbConfig.host,
     dialect: dbConfig.dialect,
     operatorsAliases: false,
-
+    // 设置时区
+    timezone: '+08:00',
     pool: {
         max: 5,
         min: 0,
