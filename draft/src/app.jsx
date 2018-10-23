@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+import Editor from './components/editor';
 import './app.css';
 
 class App extends Component {
@@ -6,7 +8,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p>hi app 2</p>
+          <p>begin</p>
+          <Editor />
+          <p>end</p>
         </header>
       </div>
     );
